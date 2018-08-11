@@ -16,7 +16,7 @@ require('./models/User');
 require('./middleware/passport');
 
 try {
-  mongoose.connect(keys.mongo);
+  mongoose.connect(keys.mongoURI);
 	console.log('Connected to database: \x1b[32m[OK]\x1b[0m');
 }
 catch (error) {
@@ -35,7 +35,6 @@ app.use(cookie({
 )
 app.use(passport.initialize());
 app.use(passport.session());
-
 require('./controllers/authRoutes')(app);
 
 /*
