@@ -2,5 +2,7 @@ module.exports = {
 	googleID: process.env.GOOGLE_ID,
 	googleSecret: process.env.GOOGLE_SECRET,
 	mongoURI: process.env.MONGO,
-	cookie: process.env.COOKIE
+	cookie: process.env.COOKIE,
+	stripePublKey: process.env.STRIPE_PUBL,
+	stripeSecretKey: process.env.STRIPE_SECRET
 };

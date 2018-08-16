@@ -1,0 +1,14 @@
+*:not(#navbar > ul) {
+  margin: 0 0 0 0;
+}
+
+body, html,
+body > div {
+  height: 100%;
+  background-color: rgba(248, 239, 186,1.0);
+}
+
+#root,
+#root > div {
+  height: 100%;
+}
