@@ -12,7 +12,7 @@ class Header extends Component {
       case null:
         return;
       case false:
-        return <li>
+        return <li className="item3 login">
           <a href="/auth/google">login with Google</a></li>;
       default:
         return [

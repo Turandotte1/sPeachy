@@ -1,7 +1,30 @@
 #Landing {
-  background-color: #fff !important;
-  height: 90%;
-  top: 20%;
-  left: 20%;
-  position: absolute;
+  display: grid;
+  height: 70vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  margin: 80px 100px 50px 100px;
+  background-color: rgba(55, 66, 250,1.0);
+  -webkit-box-shadow: -2px 3px 8px 3px rgba(92,92,92,1);
+  -moz-box-shadow: -2px 3px 8px 3px rgba(92,92,92,1);
+  box-shadow: -2px 3px 8px 3px rgba(92,92,92,1);
+}
+
+#Landing > * {
+  color: rgba(241, 242, 246,1.0);
+  padding-left: 15%;
+  font-family: 'Allerta Stencil';
+  letter-spacing: 2px;
+}
+
+#Landing h1 {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 60px;
+}
+
+#Landing h3 {
+  grid-column: 1;
+  grid-row: 3;
+  font-weight: 100;
 }
