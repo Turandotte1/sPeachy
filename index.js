@@ -14,7 +14,8 @@ const bodyParser = require('body-parser');
 
 const keys = require('./config/keys');
 require('./models/User');
-require('./middleware/passport');
+require('./models/Survey');
+require('./api/passport');
 
 try {
   mongoose.connect(keys.mongoURI);
@@ -42,7 +43,7 @@ app.use(passport.session());
 
 require('./controllers/authRoutes')(app);
 require('./controllers/stripeRoutes')(app);
-
+require('./controllers/surveysRoutes')(app);
 
 /*
 	Listen requests

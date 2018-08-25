@@ -1,18 +1,20 @@
 #navbar {
-  margin: 30px 50px 40px 50px;
+  padding: 30px 150px 0px 150px;
   display: grid;
-  grid-template-columns: 300px repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: 200px repeat(9, 1fr);
+  grid-gap: 10px;
   text-align: center;
 }
 
 .brand-logo {
-  font-size: 40px;
+  font-size: 50px;
   letter-spacing: 6px;
   align-self: center;
   text-decoration: none;
-  color: rgba(55, 66, 250,1.0);
-  font-family: Impact, Charcoal, sans-serif;
+  color: #fff;
+  text-shadow: -5px 1px 2px rgba(217, 111, 102, 1);
+  font-family: 'Allerta Stencil';
+  font-weight: 900;
   text-align: center;
 }
 
@@ -22,14 +24,48 @@
   list-style: none;
   font-size: 15px;
   grid-gap: 30px;
-  color: rgba(55, 66, 250,1.0);
+  color: #fff;
   align-self: center;
   overflow: hidden;
   padding: 10px 10px 10px 10px;
 }
 
+.about {
+  grid-column: 7;
+}
+
+.pricing {
+  grid-column: 8;
+}
+
+.login {
+  grid-column: 9;
+  border-left: 1px solid #fff;
+}
+
+.signin {
+  grid-column: 10;
+  border: 1px solid #fff;
+}
+
+.login > a,
+.signin > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li.about:hover,
+li.pricing:hover,
+.login:hover > a,
+.signin:hover > a {
+  color: #6D214F !important;
+}
+
+.signin:hover {
+  background-color: #fff;
+}
+
 .item1 {
-  grid-column: 3;
   letter-spacing: 1px;
 }
 
@@ -42,27 +78,10 @@
   width: 50%;
 }
 
-.item3 {
-  width: 50%;
-  padding: 5px 10px 5px 10px;
-  grid-column: 5;
-}
-
-.item3 > a {
-  color: rgba(55, 66, 250,1.0);
-  text-decoration: none;
-}
-
-.login {
-  border: 1px solid rgba(55, 66, 250,1.0);
-}
-
-.item2:hover,
 .item3:hover {
-  background-color: rgba(55, 66, 250,1.0);
-  color: rgba(247, 241, 227, 1.0) !important;
+  color: rgba(255, 121, 63,1.0) !important;
 }
 
 .item3:hover > a {
-  color: rgba(247, 241, 227,1.0);
+  color: rgba(255, 121, 63,1.0);
 }

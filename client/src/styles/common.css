@@ -1,14 +1,8 @@
-*:not(#navbar > ul) {
+* {
   margin: 0 0 0 0;
 }
 
-body, html,
-body > div {
+body, html {
   height: 100%;
-  background-color: rgba(241, 242, 246,1.0);
-}
-
-#root,
-#root > div {
-  height: 100%;
+  background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
 }

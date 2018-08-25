@@ -12,8 +12,14 @@ class Header extends Component {
       case null:
         return;
       case false:
-        return <li className="item3 login">
-          <a href="/auth/google">login with Google</a></li>;
+        return [
+            <li className="item3 login" key="2">
+                <a href="/auth/google">login</a>
+            </li>,
+            <li className="signin" key="1">
+                <a href="/auth/google">sign up</a>
+            </li>,
+        ];
       default:
         return [
           <li className="credits item1" key="3">
@@ -36,6 +42,12 @@ class Header extends Component {
         >
           sPeachy
         </Link>
+        <li className="about">
+            about
+        </li>
+        <li className="pricing">
+            pricing
+        </li>
         {this.renderContent()}
       </div>
     );
