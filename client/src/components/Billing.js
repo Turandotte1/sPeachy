@@ -14,7 +14,7 @@ class Billing extends Component {
         token={token => this.props.TokenHandler(token)}
         stripeKey={process.env.REACT_APP_STRIPE}
       >
-      <div className="btn">
+      <div className="btn-flat deep-orange lighten-1">
         add credits
       </div>
     </StripeCheckout>

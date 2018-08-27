@@ -4,5 +4,18 @@
 
 body, html {
   height: 100%;
-  background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+  background-color: #ffffff;
+}
+
+.btn-flat {
+  color: #ffffff !important;
+  font-family: 'Nova Mono', monospace;
+  letter-spacing: 2px;
+  box-shadow: none !important;
+}
+
+.btn-flat:hover {
+  color: #ffffff !important;
+  background-color: #bf360c !important;
+  cursor: default !important;
 }
